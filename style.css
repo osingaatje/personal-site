@@ -8,7 +8,7 @@
     --col-bg: #fcf7ec;
     --col-fg: #030d12;
     --col-accent: #669BBC;
-    --col-hl: #C1121F;
+    --col-hl: #6018c4;
   }
 }
 
@@ -17,7 +17,7 @@
     --col-bg: #030d12;
     --col-fg: #fcf7ec;
     --col-accent: #669BBC;
-    --col-hl: #C1121F;
+    --col-hl: #6018c4;
   }
 }
 
@@ -27,6 +27,9 @@
 * {
     --font-heading: 'Tomorrow', sans-serif;
     --font-body: 'Roboto Serif', serif;
+
+    --border-radius: 20px;
+    --page-margin: max(20px, 5vw);
 }
 /******** end constants ********/
 
@@ -45,18 +48,41 @@ p, span {
     font-family: var(--font-body);
 }
 
-#main-page-wrapper {
-    width: 100vw;
+#business-card-wrapper {
+    width: calc(100vw - 2 * var(--page-margin));
     height: 100vh;
 
+    margin: 0 var(--page-margin);
+
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 10vw;
 }
 
 #name {
     font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 3px 6px var(--col-accent))
 }
+
+
+@media (max-width: 1000px) {
+    #business-card-wrapper {
+        flex-direction: column;
+    }
+
+    #name {
+        text-align: center;
+    }
+    .socials-list {
+        justify-content: center;
+    }
+}
+
+
 
 .socials-list {
     display: flex;
@@ -66,5 +92,22 @@ p, span {
 .socials-list img {
     height: 40px;
     object-fit: contain;
+    
+    cursor: pointer;
+
+    transform: scale(1);
+    transition: transform cubic-bezier(.2,.6,.35,1) 0.2s;
+}
+.socials-list img:hover {
+    transform: scale(1.1);
+}
+
+#personal-photo-wrapper img {
+    width: 300px;
+    object-fit: contain;
+
+    border-radius: var(--border-radius);
+
+    filter: drop-shadow(0 4px 10px var(--col-accent))
 }
 
