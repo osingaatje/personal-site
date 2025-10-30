@@ -1,0 +1,85 @@
+/* TOMORROW */
+@font-face {
+    font-family: "Tomorrow";
+    font-weight: 100;
+    src:
+        local("Tomorrow"),
+        url("static/fonts/Tomorrow/Tomorrow-Thin.ttf")             format("truetype"),
+        url("static/fonts/Tomorrow/Tomorrow-ThinItalic.ttf")       format("truetype")
+}
+@font-face {
+    font-family: "Tomorrow";
+    font-weight: 200;
+    src:
+        local("Tomorrow"),
+        url("static/fonts/Tomorrow/Tomorrow-ExtraLight.ttf")       format("truetype"),
+        url("static/fonts/Tomorrow/Tomorrow-ExtraLightItalic.ttf") format("truetype"),
+}
+@font-face {
+    font-family: "Tomorrow";
+    font-weight: 300;
+    src:
+        local("Tomorrow"),
+        url("static/fonts/Tomorrow/Tomorrow-Light.ttf")            format("truetype"),
+        url("static/fonts/Tomorrow/Tomorrow-LightItalic.ttf")      format("truetype"),
+}
+@font-face {
+    font-family: "Tomorrow";
+    font-weight: 400;
+    src: 
+        local("Tomorrow"),
+        url("static/fonts/Tomorrow/Tomorrow-Regular.ttf")          format("truetype"),
+        url("static/fonts/Tomorrow/Tomorrow-Italic.ttf")           format("truetype"),
+}
+@font-face {
+    font-family: "Tomorrow";
+    font-weight: 500;
+    src: 
+        local("Tomorrow"),
+        url("static/fonts/Tomorrow/Tomorrow-Medium.ttf")           format("truetype"),
+        url("static/fonts/Tomorrow/Tomorrow-MediumItalic.ttf")     format("truetype"),
+}
+@font-face {
+    font-family: "Tomorrow";
+    font-weight: 600;
+    src: 
+        local("Tomorrow"),
+        url("static/fonts/Tomorrow/Tomorrow-SemiBold.ttf")         format("truetype"),
+        url("static/fonts/Tomorrow/Tomorrow-SemiBoldItalic.ttf")   format("truetype"),
+}
+@font-face {
+    font-family: "Tomorrow";
+    font-weight: 700;
+    src: 
+        local("Tomorrow"),
+        url("static/fonts/Tomorrow/Bold.ttf")                      format("truetype"),
+        url("static/fonts/Tomorrow/BoldItalic.ttf")                format("truetype"),
+}
+@font-face {
+    font-family: "Tomorrow";
+    font-weight: 800;
+    src: 
+        local("Tomorrow"),
+        url("static/fonts/Tomorrow/Tomorrow-ExtraBold.ttf")        format("truetype"),
+        url("static/fonts/Tomorrow/Tomorrow-ExtraBoldItalic.ttf")  format("truetype"),
+}
+@font-face {
+    font-family: "Tomorrow";
+    font-weight: 900;
+    src: 
+        local("Tomorrow"),
+        url("static/fonts/Tomorrow/Tomorrow-Black.ttf")            format("truetype"),
+        url("static/fonts/Tomorrow/Tomorrow-BlackItalic.ttf")      format("truetype"),;
+}
+
+/* ROBOTO SERIF */
+@font-face {
+    font-family: "Roboto Serif";
+    font-display: swap;
+    src:
+        local("Roboto_Serif"),
+        local("Roboto Serif"),
+        url("static/fonts/Roboto_Serif/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf")           format("truetype"),
+        url("static/fonts/Roboto_Serif/RobotoSerif-Italic-VariableFont_GRAD\,opsz\,wdth\,wght.ttf")    format("truetype"),
+
+}

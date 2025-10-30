@@ -1,0 +1,70 @@
+/******** Colours ********/
+:root {
+  color-scheme: dark light;
+}
+
+@media (prefers-color-scheme: light) {
+  * {
+    --col-bg: #fcf7ec;
+    --col-fg: #030d12;
+    --col-accent: #669BBC;
+    --col-hl: #C1121F;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    --col-bg: #030d12;
+    --col-fg: #fcf7ec;
+    --col-accent: #669BBC;
+    --col-hl: #C1121F;
+  }
+}
+
+/******** end colours ********/
+
+/******** Constants ********/
+* {
+    --font-heading: 'Tomorrow', sans-serif;
+    --font-body: 'Roboto Serif', serif;
+}
+/******** end constants ********/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--col-bg);
+    color: var(--col-fg);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+}
+p, span {
+    font-family: var(--font-body);
+}
+
+#main-page-wrapper {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#name {
+    font-size: 4rem;
+}
+
+.socials-list {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.socials-list img {
+    height: 40px;
+    object-fit: contain;
+}
+
