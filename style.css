@@ -12,7 +12,7 @@
     }
 
     .icon-light {
-        -webkit-filter: invert(1);
+        -webkit-filter: invert();
         filter: invert();
     }
 
@@ -33,7 +33,7 @@
     }
 
     .icon-dark {
-        -webkit-filter: invert(1);
+        -webkit-filter: invert();
         filter: invert();
     }
 
