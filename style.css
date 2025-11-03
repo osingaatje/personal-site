@@ -63,6 +63,9 @@
     --font-size-h6: calc(var(--font-size-h1) * 0.4);
 
     --icon-height: 40px;
+
+    --icon-transition: transform cubic-bezier(.2, .6, .35, 1) 0.125s;
+    --icon-hover-scale: 1.25;
 }
 
 /******** end constants ********/
@@ -128,11 +131,11 @@ span {
     cursor: pointer;
 
     transform: scale(1);
-    transition: transform cubic-bezier(.2, .6, .35, 1) 0.125s;
+    transition: var(--icon-transition);
 }
 
 .icon:hover {
-    transform: scale(1.25);
+    transform: scale(var(--icon-hover-scale));
 }
 
 @supports(mix-blend-mode: multiply) {
@@ -151,7 +154,9 @@ span {
         margin-top: calc(-1 * var(--icon-height));
         z-index: 10;
         background-color: var(--col-fg);
+        transform: scale(var(--icon-hover-scale));
     }
+
 }
 
 /******** end general styling ********/
